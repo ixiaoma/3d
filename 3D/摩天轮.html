@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			html,body{height: 100%;}
+			body{background: url(images/2.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			body>img:first-child{
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				animation: fsw 10s infinite linear;
+			}
+			body>img:nth-child(2){
+				position:fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto auto 0;
+				z-index: -1;
+			}
+			body>img:nth-child(3){
+				position:fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto ;
+				z-index: 1;
+			}
+			section{
+				width:768px ;
+				height: 768px;
+				position: fixed;
+				left: 0;
+				right: 0;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				animation: fsw 10s infinite linear;
+			}
+			@keyframes fsw{
+				0%{transform: rotate(0);}
+				50%{transform: rotate(180deg);}
+				100%{transform: rotate(360deg);}
+			}
+			section img{position: absolute;animation: child 10s infinite linear;
+			transform-origin: top center;}
+			section img:nth-child(1){top:25px ;left:330px ;}
+			section img:nth-child(2){top:150px ;right: 25px ;}
+			section img:nth-child(3){bottom:-120px ;left:330px ;}
+			section img:nth-child(4){bottom:80px ;left:15px ;}
+			section img:nth-child(5){bottom:80px ;right:10px ;}
+			section img:nth-child(6){top:150px ;left: 25px ;}
+			@keyframes child{
+				0%{transform: rotate(0);}
+				50%{transform: rotate(-180deg);}
+				100%{transform: rotate(-360deg);}
+			}
+		</style>
+	</head>
+	<body>
+		<img src="images/fsw.png" alt="" />
+		<img src="images/bracket.png"/>
+		<img src="images/big-title.png"/>
+		<section>
+			<img src="images/girl.png"/>
+			<img src="images/girls.png"/>
+			<img src="images/hairboy.png"/>
+			<img src="images/mimi.png"/>
+			<img src="images/mudog.png"/>
+			<img src="images/shamegirl.png"/>
+		</section>
+	</body>
+</html>

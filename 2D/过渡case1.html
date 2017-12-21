@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			ul,li{list-style: none;}
+			a{text-decoration: none;}
+			ul{
+				width: 1000px;
+				height: 40px;
+				border: 1px solid #ccc;
+				margin: 100px auto;
+			}
+			li{width: 99px;height: 40px;
+				border-right: 1px dashed #ccc;
+				float: left;
+			}
+			ul li:last-child{border-right: 0;}
+			ul li a{transition: 1s;background:url(images/360bg.png) no-repeat;float: left;width: 69px;padding-left: 30px;height: 40px;line-height: 40px;font-size: 14px;color: #909090;}
+			ul li a:hover{color: #29A500;}
+			ul li:first-child a{background-position:  5px -92px;color: #29a500;}
+			ul li:nth-child(2) a{background-position:5px -130px;}
+			ul li:nth-child(2) a:hover{background-position:5px -170px;}
+			ul li:nth-child(3) a{background-position:5px -212px;}
+			ul li:nth-child(3) a:hover{background-position:5px -255px;}
+			ul li:nth-child(4) a{background-position:5px -295px;}
+			ul li:nth-child(4) a:hover{background-position:5px -335px;}
+		</style>
+	</head>
+	<body>
+			<ul>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">新闻头条</a></li>
+				<li><a href="#">电视剧</a></li>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">我的主页</a></li>
+				<li><a href="#">我的主页</a></li>
+			</ul>
+	</body>
+</html>

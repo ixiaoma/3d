@@ -1,0 +1,46 @@
+一、rem布局：
+
+	1：用js时刻去改变html  fon-size的大小来确定rem的大小（了解）
+
+	2：通过媒体查询来改变html中font-size值
+		
+	@media screen and (max-width:320px ) { 
+            html{font-size: 12px;} 
+            /*
+                1rem = 12px;
+
+            */
+        }
+        @media screen and (min-width:321px) and (max-width:375px ) { 
+            html{font-size: 14px;} 
+            /*
+                1rem = 14px;
+            */
+        }
+        @media screen and (min-width:376px ) { 
+            html{font-size: 16px;}
+            /*
+                1rem = 16px;
+            */
+        }
+	
+	怎么获取rem值：
+		
+		(设计图为640情况下)从设计图量出px / 2（dpr） / 12px = ?rem
+		(设计图为750情况下)从设计图量出px / 2（dpr） / 14px = ?rem
+
+
+
+
+二、移动端psd效果图：640px/720px/750px/1080px
+
+
+三、逻辑像素、物理像素
+
+
+	像素比：dpr
+	
+	dpr = 2  （如果效果图为640 - 750   考虑的像素比是2）
+
+	手机6P  像素比值  = 3（如果效果图为1080px ，考虑的像素比是3）
+	

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			section,div{width: 200px;height: 300px;}
+			section{transform: rotateY(50deg);margin: 100px auto;border: 5px solid red;transform-style: preserve-3d;}
+			div{background: yellow;}
+			section:hover div{transform:translateZ(300px)}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div></div>
+		</section>
+	</body>
+</html>

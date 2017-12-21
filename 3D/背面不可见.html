@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			section{width: 500px;height: 500px;background: #ccc;margin: 100px auto;position: relative;}
+			div{backface-visibility: hidden;text-align: center;line-height:300px;font-size: 100px;font-weight:900;color:#fff;width: 300px;height: 300px;position: absolute;transition: 2s;}
+			div:first-child{background: red;}
+			div:last-child{background: yellow;transform: rotateY(180deg);}
+			section:hover div:first-child{transform: rotateY(180deg);}
+			section:hover div:last-child{transform: rotateY(0deg);}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div>正面</div>
+			<div>反面</div>
+		</section>
+	</body>
+</html>

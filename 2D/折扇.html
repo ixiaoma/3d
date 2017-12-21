@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{margin: 0;padding: 0;}
+			ul{width: 300px;height: 300px;border-bottom: 1px solid #f00;margin: 100px auto;list-style: none;position: relative;}
+			li{text-align: center;width: 60px;height: 150px;position: absolute;left: 120px;bottom: 30px;transform-origin: center bottom;transition: 1s;}
+			ul:hover li:nth-child(1){transform: rotate(-90deg);background: red;}
+			ul:hover li:nth-child(2){transform: rotate(-75deg);background: yellow;}
+			ul:hover li:nth-child(3){transform: rotate(-60deg);background: pink;}
+			ul:hover li:nth-child(4){transform: rotate(-45deg);background: greenyellow;}
+			ul:hover li:nth-child(5){transform: rotate(-30deg);background: dodgerblue;}
+			ul:hover li:nth-child(6){transform: rotate(-15deg);background: mistyrose;}
+			ul li:nth-child(7){background: blueviolet;z-index: 1;}
+			ul:hover li:nth-child(8){transform: rotate(15deg);background: mistyrose;}
+			ul:hover li:nth-child(9){transform: rotate(30deg);background: dodgerblue;}
+			ul:hover li:nth-child(10){transform: rotate(45deg);background: greenyellow;}
+			ul:hover li:nth-child(11){transform: rotate(60deg);background: pink;}
+			ul:hover li:nth-child(12){transform: rotate(75deg);background: yellow;}
+			ul:hover li:nth-child(13){transform: rotate(90deg);background: red;}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+			<li>9</li>
+			<li>10</li>
+			<li>11</li>
+			<li>12</li>
+			<li>13</li>
+		</ul>
+	</body>
+</html>

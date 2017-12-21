@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			img{display: block;}
+			section{width: 1050px;height: 840px;background: #ccc;border: 3px dashed #FFC0CB;margin: 50px auto;}
+			section div{overflow: hidden;width: 500px;height: 400px;background: url(images/bg.jpg);margin: 10px;float: left;position: relative;}
+			section div img:first-child{width: 440px;height: 360px;position: absolute;left: 30px;top: 20px;transition: 1s;}
+			div:hover img:first-child{width: 285px;height: 203px;}
+			section div img:nth-child(2){position: absolute;right: -130px;top: 20px;transition: 1s;}
+			div:hover img:nth-child(2){right: 0;}
+			section div img:nth-child(3){position: absolute;right: -130px;top: 150px;transition: 1s 0.5s;}
+			div:hover img:nth-child(3){right: 0;}
+			section div img:nth-child(4){position: absolute;right: -130px;top: 300px;transition: 1s 0.6s;}
+			div:hover img:nth-child(4){right: 0;}
+			section div img:nth-child(5){position: absolute;left: 230px;bottom: -203px;transition: 1s;}
+			div:hover img:nth-child(5){bottom: 50px;}
+			section div img:nth-child(6){position: absolute;left: 50px;bottom: -203px;transition: 1s 0.2s;}
+			div:hover img:nth-child(6){bottom: 0;}
+			section div:last-child  img:last-child{position: absolute;right: -130px;top: 200px; }
+			div:last-child:hover img:last-child{right: 0;bottom: 0;}
+		</style>
+	</head>
+	<body>
+		<section>
+			<div>
+				<img src="images/con1-1.jpg"/>
+				<img src="images/con1-2.jpg"/>
+				<img src="images/con1-3.jpg"/>
+				<img src="images/con1-4.jpg"/>
+				<img src="images/con1-5.jpg"/>
+				<img src="images/con1-6.jpg"/>
+			</div>
+			<div>
+				<img src="images/con2-1.jpg"/>
+				<img src="images/con2-2.jpg"/>
+				<img src="images/con2-3.jpg"/>
+				<img src="images/con2-4.jpg"/>
+				<img src="images/con2-5.jpg"/>
+				<img src="images/con2-6.jpg"/>
+			</div>
+			<div>
+				<img src="images/con3-1.jpg"/>
+				<img src="images/con3-2.jpg"/>
+				<img src="images/con3-3.jpg"/>
+				<img src="images/con3-4.jpg"/>
+				<img src="images/con3-5.jpg"/>
+				<img src="images/con3-6.jpg"/>	
+			</div>
+			<div>
+				<img src="images/con4-1.jpg"/>
+				<img src="images/con4-2.jpg"/>
+				<img src="images/con4-3.jpg"/>
+			</div>
+		</section>
+	</body>
+</html>
